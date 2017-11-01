@@ -1,0 +1,26 @@
+.list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  list-style: none;
+  text-align: left;
+
+  &__item {
+    margin-left: $spacing-larger;
+  }
+
+  &__item.--check:before {
+    content: url("data:image/svg+xml; utf8, <svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path fill='none' stroke-width='3' stroke='green' d='M2 20 L12 28 30 4'></path></svg>");
+    position: absolute;
+    width: 0.8em;
+    height: 0.8em;
+    left: 0;
+  }
+
+  &__item.--strike {
+    text-decoration: line-through;
+    color: $color-gray;
+  }
+}

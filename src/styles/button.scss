@@ -1,0 +1,62 @@
+.button {
+  font-family: $font-primary;
+  font-size: 1rem;
+  border-radius: $border-radius;
+  padding: $spacing-small $spacing;
+  border-width: 2px;
+  border-style: solid;
+  transition: all 0.2s ease;
+  outline: 0;
+  cursor: pointer;
+
+  &.--full {
+    width: 100%;
+  }
+
+  &.--big {
+    font-size: 1rem;
+    padding: $spacing $spacing-large;
+  }
+
+  &.--small {
+    font-size: 1rem;
+    padding: $spacing-smaller $spacing;
+  }
+
+  &.--dashed {
+    border-style: dashed;
+
+    &:hover {
+      border-color: $color-black;
+    }
+  }
+
+  &.--primary {
+    color: $color-white;
+    background: $color-primary;
+    border-color: $color-primary;
+
+    &:focus,&:hover {
+      background-color: $color-primary--light;
+      border-color: $color-primary--light;
+      box-shadow: $box-shadow;
+    }
+
+    &:active {
+      background-color: $color-primary--dark;
+      border-color: $color-primary--dark;
+    }
+  }
+
+  &.--outline {
+    background: none;
+    color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      border-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+}
